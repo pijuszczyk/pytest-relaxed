@@ -24,7 +24,7 @@ setup(
         # TODO: do we need to name the LHS 'pytest_relaxed' too? meh
         "pytest11": ["relaxed = pytest_relaxed.plugin"]
     },
-    install_requires=["pytest>=3,<5", "six>=1,<2", "decorator>=4,<5"],
+    install_requires=["pytest>=6.2.5,<7", "six>=1,<2", "decorator>=4,<5"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Pytest",
@@ -38,6 +38,9 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Programming Language :: Python",
         "Topic :: Software Development :: Testing",
     ],

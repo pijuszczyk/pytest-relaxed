@@ -9,7 +9,9 @@ python:
   - "3.5"
   - "3.6"
   - "3.7"
-  - "3.8-dev"
+  - "3.8"
+  - "3.9"
+  - "3.10"
   - "pypy"
   - "pypy3"
 matrix:
@@ -26,11 +28,6 @@ matrix:
       env: "OLDEST_PYTEST=3.0.7"
     - python: 3.7
       env: MIDDLE_AGED_PYTEST=3.10.1
-  # pypy3 (as of 2.4.0) has a wacky arity issue in its source loader. Allow it
-  # to fail until we can test on, and require, PyPy3.3+. See invoke#358.
-  allow_failures:
-    - python: pypy3
-    - python: 3.8-dev
 install:
   # Grab oldest-supported pytest version if this cell wanted it
   - |
